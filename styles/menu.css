@@ -1,0 +1,17 @@
+.menu{
+    width: 100%;
+    height: 40px;
+    background: cadetblue;
+}
+
+.ulMenu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.liMenu{
+    font-size: 30px;
+}

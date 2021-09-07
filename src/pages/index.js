@@ -1,4 +1,8 @@
 import React from "react"
+import Link from 'next/link'
+
+import Menu from '../components/menu'
+
 
 export async function getStaticProps(context){
 
@@ -22,18 +26,32 @@ export async function getStaticProps(context){
  export default function App(props){
 
     const { pokemons } = props;
-
+console.log(pokemons)
      return(
         <>
-            <h1>Pokédex Com Nextjs</h1>
+        <Menu />
+          <div className="content">
+                 <h1>Pokédex Com Nextjs</h1>
 
-            <ul>
-                {pokemons.map((pokemon) => (
-                    <li key={pokemon.entry_number}>
-                        {pokemon.pokemon_species.name}
-                    </li>
-                ))}
-            </ul>
+                
+                    <div className="cardcont">
+                        {pokemons.map((pokemon) => (
+                            <div key={pokemon.entry_number}>
+                            <Link href={`/pokemon/${pokemon.entry_number}`}>
+
+                               <div className="card">                               
+                                    <a>
+                                        {pokemon.pokemon_species.name}
+                                    </a>
+                               </div>
+                            </Link>
+                            </div>
+                        ))}
+                    </div>
+                
+          </div>
         </>
      )
  }
+
+ 

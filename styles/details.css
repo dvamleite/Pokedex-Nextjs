@@ -1,0 +1,20 @@
+.details{
+    width: 100%;
+     padding: 1rem;
+     margin: 1rem;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.details img{
+    width: 300px;
+    height: 300px;
+}
+
+.details h2{
+    margin: 1rem;
+    font-size: 25px;
+}
