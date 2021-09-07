@@ -1,20 +1,47 @@
 .details{
     width: 100%;
      padding: 1rem;
-     margin: 1rem;
+     
 
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
+
+     border: 2px solid #acacac;
 }
 
 .details img{
     width: 300px;
-    height: 300px;
+    height: 300px;    
+}
+
+.details img:hover{
+    transform: rotateY(180deg);   
 }
 
 .details h2{
     margin: 1rem;
     font-size: 25px;
+}
+
+.detailsCard{
+    width: 600px;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: .5rem;
+
+    border: 2px solid #acacac;
+    border-radius: 8px;
 }
