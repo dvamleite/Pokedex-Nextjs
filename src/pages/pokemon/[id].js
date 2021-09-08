@@ -25,8 +25,9 @@ export default function Pokemon({pokemon}){
 
                         <div className="infos">
                             <h2>ID: {pokemon.id}</h2>
-                            <h2>Tamanho: {pokemon.weight}</h2>
                             <h2>Ordem: {pokemon.order}</h2>
+                            <h2>Tamanho: {pokemon.weight}</h2>
+                           
                         </div>
                </div>                  
   

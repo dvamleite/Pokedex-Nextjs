@@ -40,7 +40,8 @@ export async function getStaticProps(context){
                             <div key={pokemon.entry_number}>
                             <Link href={`/pokemon/${pokemon.entry_number}`}>
 
-                               <div className="card">                                 
+                               <div className="card"> 
+                               <span className="numb">#{pokemon.entry_number}</span>                                
                                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${pokemon.entry_number}.png`} />
                                     <a>
                                         {pokemon.pokemon_species.name}

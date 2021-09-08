@@ -7,3 +7,11 @@
 
     padding: .5rem;
 }
+
+.numb{
+    margin-bottom: 50px;
+    margin-left: 60%;
+    font-size: 25px;
+    background: darkgoldenrod;
+    border-radius: 50%;
+}
